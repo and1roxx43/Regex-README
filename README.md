@@ -4,7 +4,7 @@ Regular expressions are a way to describe patterns in string data. They are powe
 
 ## Summary
 
-Regex used will be for "username" `  ^[a-zA-Z0-9_]{5,}[a-zA-Z]+[0-9]*$  `
+Regex used will be `  ^[a-zA-Z0-9_]{5,}[a-zA-Z]+[0-9]*$  `  for "username"
 
 ## Table of Contents
 
