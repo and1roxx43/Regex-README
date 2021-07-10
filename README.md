@@ -5,7 +5,7 @@ Regular expressions are a way to describe patterns in string data. They are powe
 ## Summary
 ___
 
-Regex used will be &nbsp;` ^[a-zA-Z0-9_]{5,16}$ ` &nbsp; for "Username"
+Regex used will be &nbsp;` /^[a-zA-Z0-9_]{5,16}$/ ` &nbsp; for "Username"
 
 ## Table of Contents
 ___
