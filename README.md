@@ -37,7 +37,7 @@ Bracket expression indicate a set of characters inside the bracket to match any 
 ### Character Classes
 - With a “character class”, also called “character set”, you can tell the regex engine to match only one out of several characters. The character to be matched should be placed inside the square brackets, only the one character will be matched. <br>
 Inside a character class, the dot &nbsp;`\.`&nbsp; loses its special meaning and matches a literal dot. The &nbsp; `\d`&nbsp; matches any digits equivalent to `[0-9]`
-
+___
 
 ## Author
 ___
