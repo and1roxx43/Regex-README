@@ -5,7 +5,7 @@ Regular expressions are a way to describe a search pattern in string data. They 
 ## Summary
 ___
 
-Regex used will be - matching an Email: `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
+Regex used - matching an Email: `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
 
 ## Table of Contents
 ___
