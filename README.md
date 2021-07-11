@@ -1,11 +1,11 @@
 # Regex-README
 
-Regular expressions are a way to describe patterns in string data. They are powerful tools for inpecting and processing strings.
+Regular expressions are a way to describe a search pattern in string data. They are powerful tools for inpecting and processing strings.
 
 ## Summary
 ___
 
-Regex used will be &nbsp;` ^[a-zA-Z0-9_]{5,16}$ ` &nbsp; for "Username"
+Regex used will be - matching an Email: `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
 
 ## Table of Contents
 ___
@@ -15,35 +15,31 @@ ___
 - [Grouping Constructs](#grouping-constructs)
 - [Bracket Expressions](#bracket-expressions)
 - [Character Classes](#character-classes)
-- [The OR Operator](#the-or-operator)
-- [Flags](#flags)
-- [Character Escapes](#character-escapes)
+
 
 ## Regex Components
 ___
 
 ### Anchors
-The characters ^ and $ do not match any of the character of the regex string. They only represent the position before and after, or between characters. They can be used to "anchor" the regex match at a certain position. The ^ matches the position beforre the first character in the string, similarly the $ matches right after the last character in the string. 
+The characters `^` and `$` do not match any of the character of the regex string. They only represent the position before and after, or between characters. They can be used to "anchor" the regex match at a certain position. The ^ matches the position beforre the first character in the string, similarly the $ matches right after the last character in the string. 
 ### Quantifiers
-Indicates the numbers of characters or expressions to match. In thec instance of &nbsp; `{5,16}` &nbsp; will match any alphanumerics in between 5 to 16 characters long.
+Indicates the numbers of characters or expressions to match. In the instance of &nbsp; `{2,6}` &nbsp; will match any letters in between 2 to 6 characters long.<br>
+`+` matches the previous token between one and unlimited times, as many times as possible, giving back as needed (greedy)
  
 ### Grouping Constructs
-From the regex used, there is one group being used. 
-- `[a-zA-Z0-9_]{5,}` to match at any alphanumerics between 5-16 characters. Will accept lowercase, uppercase, any number between 0-9, and can contain underscore and hyphen.
-
-
+From the regex used, there are three groups being used. 
+- First capturing group: `[a-z0-9_\.-]+)@` The "name" to match at any letters, numbers, underscore, dots and/or hyphens followed by an att symbol.
+- Second Capturing group: `[\da-z\.-]+)\.` The "domain" to match any digits meta characters, letters, dot and/or hyphens as long as need be followed by a dot.
+- Third Capturing group: `[a-z\.]{2,6}` The "domain suffix" which can be 2 to 6 alphabets long
 ### Bracket Expressions
-Bracket expression indicate a set of characters to match, any invidual character between the brackets will match. For e.g. `[a-zA-Z]` will match any alphabets in lowercase and uppercase.
+Bracket expression indicate a set of characters inside the bracket to match any invidual character, for e.g. `[a-z]` will match any alphabets in lowercase.
 
 ### Character Classes
+- With a “character class”, also called “character set”, you can tell the regex engine to match only one out of several characters. The character to be matched should be placed inside the square brackets, only the one character will be matched. <br>
+Inside a character class, the dot &nbsp;`\.`&nbsp; loses its special meaning and matches a literal dot. The &nbsp; `\d`&nbsp; matches any digits equivalent to `[0-9]`
 
-### The OR Operator
-
-### Flags
-
-### Character Escapes
 
 ## Author
 ___
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+My name is Andrew Quenette, I am a Junior web developer. You can reach me on https://github.com/and1roxx43/
