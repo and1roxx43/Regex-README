@@ -42,4 +42,4 @@ ___
 ## Author
 ___
 
-My name is Andrew Quenette, I am a Junior web developer. You can reach me on https://github.com/and1roxx43/
+My name is Andrew Quenette, I am a Junior web developer. You can reach me on my GitHub profile at https://github.com/and1roxx43/
